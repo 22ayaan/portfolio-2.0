@@ -1,4 +1,5 @@
 import React from 'react';
+import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
 
 type Props = {};
 
@@ -14,6 +15,39 @@ function ContactMe({}: Props) {
           Wanna get in touch?{" "}
           <span className='underline decoration-orange-300/70'>Let's Talk.</span>
         </h4>
+        <div className='space-y-10'>
+          <div className='flex items-center space-x-5 justify-center'>
+            <PhoneIcon 
+            className='text-orange-400 h-7 w-7 animate-pulse'/>
+            <p className='text-2xl'>+1 (412) 969-3567</p>
+          d</div>
+
+          <div className='flex items-center space-x-5 justify-center'>
+            <EnvelopeIcon
+            className='text-orange-400 h-7 w-7 animate-pulse'/>
+            <p className='text-2xl'>rushilayaan@gmail.com</p>
+          </div>
+
+          <div className='flex items-center space-x-5 justify-center'>
+            <MapPinIcon 
+            className='text-orange-400 h-7 w-7 animate-pulse'/>
+            <p className='text-2xl'>Pittsburgh, PA</p>
+          </div>
+        </div>
+        <form className='flex flex-col space-y-2 w-fit mx-auto'>
+          <div className='flex space-x-2'>
+            <input placeholder="Name" className="contactInput" type="text" />
+            <input placeholder="Email" className="contactInput" type="text" />
+          </div>
+
+          <input placeholder="Subject" className="contactInput" type='text' />
+          <textarea placeholder="Message" className="contactInput" />
+          <button
+          type='submit'
+          className='bg-orange-500 py-5 px-10 rounded-md text-white font-bold text-lg md:text-xl'>
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   )
