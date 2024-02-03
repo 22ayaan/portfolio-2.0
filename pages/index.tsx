@@ -3,6 +3,10 @@ import type { NextPage } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import WorkExperience from "@/components/WorkExperience";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import ContactMe from "@/components/ContactMe";
 
 const Home: NextPage = () => {
   return (
@@ -11,24 +15,31 @@ const Home: NextPage = () => {
         <title>Ayaan Siddiqui - Portfolio</title>
       </Head>
 
-      {/* Header */}
       <Header />
 
-      {/* Hero */}
       <section id="hero" className='snap-start'>
         <Hero />
       </section>
 
-      {/* About */}
       <section id="about" className='snap-center'>
         <About />
       </section>
 
-      {/* Experience */}
+      <section id="experience" className='snap-center'>
+        <WorkExperience />
+      </section>
 
-      {/* Projects */}
+      <section id="skills" className='snap-start'>
+        <Skills />
+      </section>
 
-      {/* Contact */}
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
+
+      <section id="contact" className="snap-start">
+        <ContactMe />
+      </section>
     </div>
   );
 };
