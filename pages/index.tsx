@@ -7,6 +7,8 @@ import WorkExperience from "@/components/WorkExperience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
+import { ChevronDoubleUpIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -42,6 +44,16 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <ChevronDoubleUpIcon 
+            className="h-10 w-10 bg-gray-600 rounded-full filter grayscale hover:grayscale-0"/>
+            <p className="ml-3 text-base uppercase tracking-[3px] text-gray-400">Back to top</p>
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };
