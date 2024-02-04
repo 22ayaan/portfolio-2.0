@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           <div className="flex items-center justify-center">
             <ChevronDoubleUpIcon 
             className="h-10 w-10 bg-gray-600 rounded-full filter grayscale hover:grayscale-0"/>
-            <p className="ml-3 text-base uppercase tracking-[3px] text-gray-400">Back to top</p>
+            {/* <p className="ml-3 text-base uppercase tracking-[3px] text-gray-400">Back to top</p> */}
           </div>
         </footer>
       </Link>

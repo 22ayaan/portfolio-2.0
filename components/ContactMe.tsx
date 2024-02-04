@@ -38,7 +38,7 @@ function ContactMe({}: Props) {
             <PhoneIcon 
             className='text-orange-400 h-7 w-7 animate-pulse'/>
             <p className='text-2xl'>+1 (412) 969-3567</p>
-          d</div>
+          </div>
 
           <div className='flex items-center space-x-5 justify-center'>
             <EnvelopeIcon
