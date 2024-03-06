@@ -32,29 +32,29 @@ const Home = ({ pageInfo, experiences, skills, socials, projects }: Props) => {
      scrollbar-thumb-slate-500"
     >
       <Head>
-        <title>Ayaan Siddiqui - Portfolio</title>
+        <title>{pageInfo?.name} - Portfolio</title>
       </Head>
 
       <Header socials={socials} />
 
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero pageInfo={pageInfo} />
       </section>
 
       <section id="about" className="snap-center">
-        <About />
+        <About pageInfo={pageInfo} />
       </section>
 
       <section id="experience" className="snap-center">
-        <WorkExperience />
+        <WorkExperience experiences={experiences} />
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills />
+        <Skills skills={skills} />
       </section>
 
       <section id="projects" className="snap-start">
-        <Projects />
+        <Projects projects={projects} />
       </section>
 
       <section id="contact" className="snap-start">
@@ -64,8 +64,7 @@ const Home = ({ pageInfo, experiences, skills, socials, projects }: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <ChevronDoubleUpIcon className="h-10 w-10 bg-gray-600 rounded-full filter grayscale hover:grayscale-0" />
-            {/* <p className="ml-3 text-base uppercase tracking-[3px] text-gray-400">Back to top</p> */}
+            <ChevronDoubleUpIcon className="h-10 w-10 bg-gray-600 rounded-full filter grayscale hover:grayscale-0 cursor-pointer hover:bg-orange-400" />
           </div>
         </footer>
       </Link>
